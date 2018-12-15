@@ -1,0 +1,139 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: dimgrey;
+}
+#myCanvas {
+    position: absolute;
+    top: 50%;
+    margin-left: -640px ;
+    margin-top: -360px ;
+    left: 50%;
+}
+#title {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-right: -50%;
+    margin-top: -75px ;
+    transform: translate(-50%,0);
+    color: #fff000;
+    font-family: "8bit";
+    font-size: 75px;
+}
+@font-face {
+    font-family: "8bit";
+    src: url("8-bit pusab.ttf");
+}
+#start{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -360px ;
+    margin-left: -640px ;
+}
+#startbtn{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-top: -150px ;
+    margin-left: -125px ;
+    width: 250px ;
+    height: 80px ;
+    font-size: 20px ;
+    font-family: "8bit" ;
+    color: #fff000;
+    background-color: #585858;
+}
+div.background {
+    width:1280px; /*width of your image*/
+    height:720px; /*height of your image*/
+    background-image:url('background.png');
+    margin:0; /* If you want no margin */
+    padding:0; /*if your want to padding */
+}
+#controls{
+    position: absolute;
+    font-family: "8bit";
+    color: #fff000;
+    margin-top: -350px;
+    margin-right: -950px;
+    top: 50%;
+    right: 50%;
+    width: 300px;
+    background-color: #343434;
+    border: yellow;
+    text-align: center;
+}
+#howToPlay{
+    position: absolute;
+    font-family: "8bit";
+    color: #fff000;
+    margin-top: -275px;
+    margin-left: -950px;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    background-color: #343434;
+    border: yellow;
+    text-align: center;
+}
+#settings{
+    position: absolute;
+    font-family: "8bit";
+    color: #fff000;
+    margin-top: -10px;
+    margin-right: -950px;
+    top: 50%;
+    right: 50%;
+    width: 300px;
+    background-color: #343434;
+    border: yellow;
+    text-align: center;
+}
+#musicbtn{
+    font-family: "8bit";
+    font-size: 18px ;
+    color: #fff000;
+    background-color: #000000;
+}
+#quitbtn{
+    font-family: "8bit";
+    font-size: 18px ;
+    color: #fff000;
+    background-color: #000000;
+}
+p{
+    font-size: 18px ;
+}
+#Game_Over{
+    position: absolute;
+    top: 50%;
+    margin-left: -640px ;
+    margin-top: -360px ;
+    left: 50%;
+}
+#gameOver {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-right: -50%;
+    margin-top: -75px ;
+    transform: translate(-50%,0);
+    color: #ff0d00;
+    font-family: "8bit";
+    font-size: 75px;
+}
+#respawnbtn{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-top: -150px ;
+    margin-left: -125px ;
+    width: 250px ;
+    height: 80px ;
+    font-size: 20px ;
+    font-family: "8bit" ;
+    color: #fff000;
+    background-color: #585858;
+}

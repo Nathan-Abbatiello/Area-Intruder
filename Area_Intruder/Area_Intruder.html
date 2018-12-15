@@ -1,0 +1,65 @@
+<html>
+		
+    <head>
+        <title> Area Intruder </title>
+        <script src="jquery-3.3.1.min.js"> </script>
+        <script src="howler.js"></script>
+       <script type = "text/javascript" src="Area_Intruder.js">
+        </script>
+
+        <link rel="stylesheet" type="text/css" href="Area_Intruder.css">
+    </head>
+
+    <body>
+
+    <div id = "start">
+        <div class = "background"></div>
+        <h1 id = title> Area Intruder </h1>
+        <input type = "button" value = "Start" id = "startbtn">
+    </div>
+
+    <div style="display: none" id = "Game_Over">
+        <div class = "background"></div>
+        <h1 id = gameOver> Game Over </h1>
+        <input type = "button" value = "Respawn" id = "respawnbtn">
+    </div>
+
+    <div id = "controls">
+        <h1> Controls </h1>     <hr/>
+        <p> Move Right: D or -> </p>    <hr/>
+        <p> Move Left: A or <- </p>     <hr/>
+        <p> Shoot: Space bar </p>
+    </div>
+
+    <div id = "howToPlay">
+        <h1> How to Play </h1>
+        <hr/>
+        <p> Kill all the Enemies to go to the next level. </p>    <hr/>
+        <p> If you get hit by a bullet you lose one life. </p>   <hr/>
+        <p> If the Enemies reach you, you lose instantly. </p>
+    </div>
+
+    <div id = "settings">
+        <h1>Settings</h1>   <hr/>
+        <input type="button" value="Music: on" id = "musicbtn" onclick="musicToggle()"> <hr/>
+        <p> Sensitivity</p>
+        <form>
+            High (Recommended)
+            <input type="radio" name="sensitivity" value="high" id="high" checked><br>
+            Medium
+            <input type="radio" name="sensitivity" value="medium" id="medium"><br>
+            Low
+            <input type="radio" name="sensitivity" value="low" id="low">
+        </form>
+        <hr/>
+        <button id = "quitbtn" onclick="window.close()"> Quit </button>
+    </div>
+
+         <canvas id="myCanvas" width="1280" height="720" style="border:1px solid black; display: none"   tabindex="1" >
+             <img id="background" src="background.png" alt="Space" width="1280" height="720">
+             <img id="enemy" src=" enemy.png" alt="Enemy" width="50" height="50" >
+             <img id="player" src=" player.png" alt="Player" width="80" height="60" >
+         </canvas>
+
+    </body>
+</html>
